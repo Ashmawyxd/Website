@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/mdb.dark.min.css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/mdb.min.css" />
+</head>
+
+<body style="background-color: aliceblue;">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="../index.html">
+        <h5 class="pt-1">Home</h5>
+      </a>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../getstart/index.html">Get Start</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../chat/liveChat.html">Live Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../blog/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../report/index.html">Reports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../deitery/deitery.html">Deitary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../activity/activity.html">Activity</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Appointment/index.html">Appointment</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center justify-content-start">
+          <!-- Icon -->
+          <a class="text-reset me-3" href="#"> </a>
+
+          <!-- Notifications -->
+          <div class="dropdown">
+            <a class="text-reset me-3" href="#">
+              <i class="fas fa-message text-white"></i>
+              <span class="badge rounded-pill badge-notification bg-danger">10</span>
+            </a>
+            <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-bell text-white"></i>
+              <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Avatar -->
+          <div class="dropdown">
+            <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+              role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
+                alt="Black and White Portrait of a Man" loading="lazy" />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+              <li>
+                <a class="dropdown-item" href="../profile/profile.html">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <!-- header -->
+  <header>
+    <div class="header-area">
+      <div class="header-top_area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-md-6">
+              <div class="social_media_links">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-6">
+              <div class="short_contact_list">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-envelope"></i> info@docmed.com</a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fa fa-phone"></i> 160160</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sticky-header" class="main-header-area">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-2">
+              <div class="logo">
+                <h5><a href="./index.html">Website</a> / <a href="./index.html">Home</a></h5>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-7">
+              <div class="main-menu  d-lg-block">
+                <nav>
+                  <ul id="navigation">
+                    <li><a class="active" href="blog.html">Home</a></li>
+                    <li><a href="show.html">Blog</a></li>
+                    <li>
+                      <button type="button" class="nav-link" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop2">
+                        Craete Post
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3  d-lg-block">
+              <div class="Appointment">
+                <div class="book_btn  d-lg-block">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mobile_menu d-block d-lg-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Main layout-->
+  <div class="container" style="margin-top: 100px;">
+    <!--Section: News of the day-->
+    <section class="border-bottom p-4 mb-5 card">
+      <div class="row gx-5">
+        <div class="col-md-6 mb-4">
+          <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+          <h4><strong>Facilis consequatur eligendi</strong></h4>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+            eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+            sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+          </p>
+          <button type="button" class="btn btn-primary">Read more</button>
+          <button type="button" class="nav-link" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop2">
+            Craete Post
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--Section: News of the day-->
+
+    <!--Section: Content-->
+    <section class="card p-4">
+      <div class="row gx-lg-5 ">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <!-- News block -->
+          <div>
+            <!-- Featured image -->
+            <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+
+            <!-- Article data -->
+            <div class="row mb-3">
+              <div class="col-6">
+                <a href="" class="text-info">
+                  <i class="fas fa-plane"></i>
+                  Travels
+                </a>
+              </div>
+
+              <div class="col-6 text-end">
+                <u> 15.07.2020</u>
+              </div>
+            </div>
+
+            <!-- Article title and description -->
+            <a href="" class="text-dark">
+              <h5>This is title of the news</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
+                id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
+                adipisci iusto nam temporibus modi animi laboriosam?
+              </p>
+            </a>
+
+            <hr />
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Hollywood Sign on The Hill" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Palm Springs Road" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Los Angeles Skyscrapers" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Skyscrapers" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- News block -->
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <!-- News block -->
+          <div>
+            <!-- Featured image -->
+            <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/011.webp" class="img-fluid" alt="Brooklyn Bridge" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+
+            <!-- Article data -->
+            <div class="row mb-3">
+              <div class="col-6">
+                <a href="" class="text-danger">
+                  <i class="fas fa-chart-pie"></i>
+                  Business
+                </a>
+              </div>
+
+              <div class="col-6 text-end">
+                <u> 15.07.2020</u>
+              </div>
+            </div>
+
+            <!-- Article title and description -->
+            <a href="" class="text-dark">
+              <h5>This is title of the news</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
+                id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
+                adipisci iusto nam temporibus modi animi laboriosam?
+              </p>
+            </a>
+
+            <hr />
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/031.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Five Lands National Park" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/032.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Paris - Eiffel Tower" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/033.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Louvre" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/034.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Times Square" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- News block -->
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <!-- News block -->
+          <div>
+            <!-- Featured image -->
+            <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.webp" class="img-fluid"
+                alt="Golden Gate National Recreation Area" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+
+            <!-- Article data -->
+            <div class="row mb-3">
+              <div class="col-6">
+                <a href="" class="text-warning">
+                  <i class="fas fa-code"></i>
+                  Technology
+                </a>
+              </div>
+
+              <div class="col-6 text-end">
+                <u> 15.07.2020</u>
+              </div>
+            </div>
+
+            <!-- Article title and description -->
+            <a href="" class="text-dark">
+              <h5>This is title of the news</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
+                id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
+                adipisci iusto nam temporibus modi animi laboriosam?
+              </p>
+            </a>
+
+            <hr />
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/011.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Brooklyn Bridge" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/012.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Hamilton Park" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/013.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Perdana Botanical Garden Kuala Lumpur" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- News -->
+            <a href="" class="text-dark">
+              <div class="row mb-4 border-bottom pb-2">
+                <div class="col-3">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/014.webp"
+                    class="img-fluid shadow-1-strong rounded" alt="Perdana Botanical Garden" />
+                </div>
+
+                <div class="col-9">
+                  <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                  <p>
+                    <u> 15.07.2020</u>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- News block -->
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+    <div class="modal fade" id="staticBackdrop2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+      <div class="modal-dialog d-flex justify-content-center"
+        style="max-width: 50rem ;margin: auto;margin-top: 100px;margin-bottom: 100px;">
+        <div class="modal-content w-75">
+          <div class="card">
+            <div class="card-header bg-primary">
+              <h5 class="card-title text-white mt-2" id="exampleModalLabel">Post request</h5>
+            </div>
+            <div class="modal-body">
+              <div class="text-center">
+
+                <label for="file_up"><i class="far fa-file-alt fa-4x mb-3 text-primary"></i></label>
+                <input type="file" name="" id="file_up" hidden>
+                <p>
+                  <strong>Your opinion matters</strong>
+                </p>
+                <p>
+                  Have some ideas how to improve our product?
+                  <strong>Give us your feedback.</strong>
+                </p>
+              </div>
+
+              <hr />
+
+              <form class="px-4" action="">
+                <p class="text-center"><strong>Your rating:</strong></p>
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="exampleForm" id="radio3Example1" />
+                  <label class="form-check-label" for="radio3Example1">
+                    Videos
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="exampleForm" id="radio3Example2" />
+                  <label class="form-check-label" for="radio3Example2">
+                    Post
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="exampleForm" id="radio3Example3" />
+                  <label class="form-check-label" for="radio3Example3">
+                    Document
+                  </label>
+                </div>
+                <p class="text-center"><strong>What could we improve?</strong></p>
+
+                <!-- Message input -->
+                <div class="form-outline mb-4">
+                  <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                  <label class="form-label" for="form4Example3">Your feedback</label>
+                </div>
+              </form>
+            </div>
+            <div class="card-footer text-end bg-light">
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pagination -->
+    <nav class="my-4" aria-label="...">
+      <ul class="pagination pagination-circle justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!--Main layout-->
+
+  <!-- Footer -->
+  <footer class="bg-primary text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+  <script>
+    window.onload = ()=>{
+      var currentUrl = window.location.href;
+      document.querySelectorAll('ul li a').forEach(function (link) {
+        if (link.href === currentUrl) {
+          link.classList.add('active');
+        }
+      })
+    }
+  </script>
+</body>
+
+</html>

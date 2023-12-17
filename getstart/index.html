@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/mdb.dark.min.css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/mdb.min.css" />
+</head>
+
+<body style="background-color: aliceblue;">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="../index.html">
+        <h5 class="pt-1">Home</h5>
+      </a>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../getstart/index.html">Get Start</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../chat/liveChat.html">Live Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../blog/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../report/index.html">Reports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../deitery/deitery.html">Deitary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../activity/activity.html">Activity</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Appointment/index.html">Appointment</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center justify-content-start">
+          <!-- Icon -->
+          <a class="text-reset me-3" href="#"> </a>
+
+          <!-- Notifications -->
+          <div class="dropdown">
+            <a class="text-reset me-3" href="#">
+              <i class="fas fa-message text-white"></i>
+              <span class="badge rounded-pill badge-notification bg-danger">10</span>
+            </a>
+            <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-bell text-white"></i>
+              <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Avatar -->
+          <div class="dropdown">
+            <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+              role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
+                alt="Black and White Portrait of a Man" loading="lazy" />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+              <li>
+                <a class="dropdown-item" href="../profile/profile.html">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <header>
+    <div class="header-area">
+      <div class="header-top_area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-md-6">
+              <div class="social_media_links">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-6">
+              <div class="short_contact_list">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-envelope"></i> info@docmed.com</a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fa fa-phone"></i> 160160</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sticky-header" class="main-header-area">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-2">
+              <div class="logo">
+                <h5><a href="../index.html">Website</a> / <a href="./index.html">Getstart</a></h5>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-7">
+              <div class="main-menu  d-lg-block">
+                <nav>
+                  <ul id="navigation">
+                    <li><a class="active" href="#index.html">home</a></li>
+                    <li><a href="#Doctors.html">More Info</a></li>
+                    <li><a href="#about.html">Policy</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3  d-lg-block">
+              <div class="Appointment">
+                <div class="book_btn  d-lg-block">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mobile_menu d-block d-lg-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Navbar -->
+  <div class="card px-3 mt-5 mb-5" style="max-width: 1000px;margin: auto;">
+    <form>
+      <!-- example 3 -->
+      <div class="mt-5">
+        <h4 class="mb-4">Entre Data</h4>
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-6">
+            <p class="mb-0">Age</p>
+            <!-- Material input -->
+            <div class="input-group mb-3">
+              <input type="Age" class="form-control" id="inputAge4MD" placeholder="Age" />
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-6">
+            <p class="mb-0">Weight</p>
+            <!-- Material input -->
+            <div class="input-group mb-3">
+              <input type="Weight" class="form-control" id="inputWeight4MD" placeholder="Weight" />
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-12">
+            <p class="mb-0">Blood press</p>
+            <!-- Material input -->
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" id="inputBlood pressMD" placeholder="1234 Main St" />
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-12">
+            <p class="mb-0">Glucose</p>
+            <!-- Material input -->
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" id="inputAdedress2MD" placeholder="Apartment, studio, or floor" />
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-3">
+            <p class="mb-0">skinthickness</p>
+            <!-- Material input -->
+            <div class="input-group mb-4">
+              <input type="text" class="form-control" id="inputskinthicknessMD" placeholder="New York skinthickness" />
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-3">
+            <p class="mb-0">insulin</p>
+            <!-- Material input -->
+            <div class="input-group mb-4">
+              <input type="text" class="form-control" id="inputinsulinMD" placeholder="11206-1117" />
+            </div>
+          </div>
+          <div class="col-6">
+            <p class="mb-0">BMI</p>
+            <!-- Material input -->
+            <div class="input-group mb-4">
+              <input type="text" class="form-control" id="inputinsulinMD" placeholder="11206-1117" />
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+        <div class="d-flex justify-content-center mb-5">
+          <button type="submit" class="btn btn-primary btn-md">Inform Now</button>
+        </div>
+      </div>
+      <!-- example 3 -->
+    </form>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-primary text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+  <script>
+    window.onload = ()=>{
+      var currentUrl = window.location.href;
+      document.querySelectorAll('ul li a').forEach(function (link) {
+        if (link.href === currentUrl) {
+          link.classList.add('active');
+        }
+      })
+    }
+  </script>
+</body>
+
+</html>

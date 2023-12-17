@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/mdb.dark.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/mdb.min.css" />
+</head>
+
+<body style="background-color: aliceblue">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="../index.html">
+                <h5 class="pt-1">Home</h5>
+            </a>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../getstart/index.html">Get Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../chat/liveChat.html">Live Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../blog/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../report/index.html">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../deitery/deitery.html">Deitary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../activity/activity.html">Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Appointment/index.html">Appointment</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center justify-content-start">
+                    <!-- Icon -->
+                    <a class="text-reset me-3" href="#"> </a>
+
+                    <!-- Notifications -->
+                    <div class="dropdown">
+                        <a class="text-reset me-3" href="#">
+                            <i class="fas fa-message text-white"></i>
+                            <span class="badge rounded-pill badge-notification bg-danger">10</span>
+                        </a>
+                        <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bell text-white"></i>
+                            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#">Some news</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Another news</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Avatar -->
+                    <div class="dropdown">
+                        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                            id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                                height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                                <a class="dropdown-item" href="../profile/profile.html">My profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right elements -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <header>
+        <div class="header-area">
+            <div class="header-top_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6">
+                            <div class="social_media_links">
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <div class="short_contact_list">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-envelope"></i> info@docmed.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fa fa-phone"></i> 160160</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <h5>
+                                    <a href="./index.html">Website</a> /
+                                    <a href="./index.html">Reports</a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="index.html">Charts</a></li>
+                                        <li><a href="reports.html">Reports</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-lg-block">
+                            <div class="Appointment">
+                                <div class="book_btn d-lg-block"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-10 mb-1">
+        <div class="row">
+            <div class="col-xl-5 col-md-6 card p-3">
+                <section class="mb-5">
+                    <div class="row gx-lg-5">
+                      <div class="col-lg-6 mb-5">
+                        <div class="d-flex align-items-start">
+                          <div class="flex-shrink-0">
+                            <div class="p-3 badge-primary rounded-4">
+                              <i class="fas fa-cloud-upload-alt fa-lg text-primary fa-fw"></i>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 ms-4">
+                            <p class="fw-bold mb-1">Tutorials</p>
+                            <p class="text-muted mb-1">
+                              Dozens of free tutorials to help you discover the full potential of MDB.
+                            </p>
+                            <small><a href="">Learn more</a></small>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <div class="col-lg-6 mb-5">
+                        <div class="d-flex align-items-start">
+                          <div class="flex-shrink-0">
+                            <div class="p-3 badge-primary rounded-4">
+                              <i class="fas fa-database fa-lg text-primary fa-fw"></i>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 ms-4">
+                            <p class="fw-bold mb-1">Integrations</p>
+                            <p class="text-muted mb-1">
+                              MDB is integrated with all major technologies and tools.
+                            </p>
+                            <small><a href="">Learn more</a></small>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <div class="col-lg-6 mb-5">
+                        <div class="d-flex align-items-start">
+                          <div class="flex-shrink-0">
+                            <div class="p-3 badge-primary rounded-4">
+                              <i class="fas fa-stream fa-lg text-primary fa-fw"></i>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 ms-4">
+                            <p class="fw-bold mb-1">Backend friendly</p>
+                            <p class="text-muted mb-1">
+                              MDB is designed to be seamlessly integrated and used with the backend.
+                            </p>
+                            <small><a href="">Learn more</a></small>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <div class="col-lg-6 mb-5">
+                        <div class="d-flex align-items-start">
+                          <div class="flex-shrink-0">
+                            <div class="p-3 badge-primary rounded-4">
+                              <i class="fas fa-copy fa-lg text-primary fa-fw"></i>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 ms-4">
+                            <p class="fw-bold mb-1">Support and community</p>
+                            <p class="text-muted mb-1">
+                              The MDB team and our global community are there to support you.
+                            </p>
+                            <small><a href="">Learn more</a></small>
+                          </div>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </section>
+            </div>
+            <div class="col-xl-1 col-md-6 p-3"></div>
+            <div class="col-xl-6 col-md-6 card p-3">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Lorem</th>
+                            <th scope="col">Ipsum</th>
+                            <th scope="col">Dolor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Sit</td>
+                            <td>Amet</td>
+                            <td>
+                                <button type="button" class="btn btn-link btn-sm px-3" data-mdb-ripple-init
+                                    data-ripple-color="primary">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Adipisicing</td>
+                            <td>Elit</td>
+                            <td>
+                                <button type="button" class="btn btn-link btn-sm px-3" data-mdb-ripple-init
+                                    data-ripple-color="primary">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Hic</td>
+                            <td>Fugiat</td>
+                            <td>
+                                <button type="button" class="btn btn-link btn-sm px-3" data-mdb-ripple-init
+                                    data-ripple-color="primary">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-primary text-center text-white mt-10">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+    <script src="./charts.js"></script>
+    <script src="./charts2.js"></script>
+    <script src="./charts3.js"></script>
+    <script>
+        window.onload = () => {
+            var currentUrl = window.location.href;
+            document.querySelectorAll("ul li a").forEach(function (link) {
+                if (link.href === currentUrl) {
+                    link.classList.add("active");
+                }
+            });
+        };
+    </script>
+</body>
+
+</html>
